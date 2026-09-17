@@ -15,13 +15,18 @@ Cada seção fecha em uma tela (100svh). Sistema de movimento da casa (reveals +
 ## Checklist de etapas
 - [x] 1. Extrair do Drive (rclone) → `_raw/`
 - [x] 2. Scaffold (Marca/ Copys/ imagens/ design-system/ Site/)
-- [ ] 2b. Repo GitHub `dev-buildv/archimedi-site` (privado)
+- [x] 2b. Repo GitHub `dev-buildv/archimedi-site` (privado) → https://github.com/dev-buildv/archimedi-site
 - [x] 3. Design system (`design-system/tokens.md`) da marca real
 - [x] 4. Copy estruturada (`Copys/copy-estruturada.md`) do material institucional
-- [x] 5. Front-end (`Site/index.html` + css/js) + auditoria
-- [ ] 6. Ajustes: imagens webp (feito) + auditoria de responsividade
-- [ ] 7. Módulos LGPD + tags (com IDs)
-- [ ] 8. Revisão humana + deploy (gate)
+- [x] 5. Front-end (`Site/index.html` + css/js) + auditoria adversarial (WCAG AA, anti-IA)
+- [x] 6. Imagens webp + responsividade (overflow 0 de 320px a 1440px, medido headless)
+- [ ] 7. Módulos LGPD + tags (com IDs) — pendente
+- [ ] 8. Revisão humana + deploy (gate) — aguardando
+
+## Deploy
+- `deploy-vercel/` (Root Directory no Vercel, Framework: Other/static) + `vercel.json`
+- `public_html/` (FTP Hostinger) + `.htaccess` (cache, gzip, headers)
+- Ambos versionados no repo. Preview local: `node preview-server.js` → http://localhost:8099/
 
 ## Inventário do material
 - Manual de Marca (docx) → paleta, tipografia, tom de voz, logo (2 versões extraídas)

@@ -3,16 +3,16 @@
   "slug": "archimedi",
   "setor": "arquitetura e obras para saúde",
   "hospedagem": "Vercel (estático) + public_html (Hostinger)",
-  "etapa_atual": 5,
+  "etapa_atual": 8,
   "atualizado_em": "2026-09-17",
   "etapas": [
     {"n": 1, "nome": "extrair-drive", "status": "done"},
     {"n": 2, "nome": "scaffold-projeto", "status": "done"},
-    {"n": "2b", "nome": "repo-github", "status": "pending"},
+    {"n": "2b", "nome": "repo-github", "status": "done"},
     {"n": 3, "nome": "design-system", "status": "done"},
     {"n": 4, "nome": "extrair-copy", "status": "done"},
-    {"n": 5, "nome": "gerar-frontend", "status": "doing"},
-    {"n": 6, "nome": "ajustes-imagens-responsivo", "status": "pending"},
+    {"n": 5, "nome": "gerar-frontend", "status": "done"},
+    {"n": 6, "nome": "ajustes-imagens-responsivo", "status": "done"},
     {"n": 7, "nome": "modulos-lgpd-tags", "status": "pending"},
     {"n": 8, "nome": "revisao-humana-deploy", "status": "blocked"}
   ],
@@ -26,8 +26,8 @@
   ],
   "links": {
     "drive": "https://drive.google.com/drive/folders/1aLaxfYpr536_5lB3AInzL4gwWDrXkpAe",
-    "repo": null,
-    "preview": null,
+    "repo": "https://github.com/dev-buildv/archimedi-site",
+    "preview": "local: node preview-server.js -> http://localhost:8099/ (serve a pasta Site/)",
     "dominio": null
   }
 }
