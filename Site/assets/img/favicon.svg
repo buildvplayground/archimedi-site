@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#0C1E2D"/>
+  <!-- bracket frame -->
+  <g fill="none" stroke="#547585" stroke-width="3" stroke-linecap="square">
+    <path d="M14 20V13h7"/><path d="M50 13h-7"/><path d="M50 44v7h-7"/><path d="M14 44v7h7" opacity="0"/>
+    <path d="M14 44v7h7"/><path d="M50 20V13"/><path d="M14 20V13"/><path d="M50 44v7"/>
+  </g>
+  <!-- A M -->
+  <text x="32" y="30" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-weight="700" font-size="17" fill="#FFFBF6">A</text>
+  <text x="32" y="49" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-weight="700" font-size="17" fill="#B06F54">M</text>
+</svg>

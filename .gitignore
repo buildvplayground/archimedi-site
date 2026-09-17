@@ -1,0 +1,21 @@
+# BuildV: versiona só o entregável. Material-fonte fica local + Drive.
+_raw/
+imagens/
+site antigo/
+Marca/
+Copys/
+design-system/
+brief-pack.md
+*.log
+preview-server.js
+
+# Segredos nunca no git
+db-config.php
+.env
+.env.*
+!.env.example
+
+# Sistema
+.DS_Store
+Thumbs.db
+node_modules/

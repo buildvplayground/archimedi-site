@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://archimedi.com.br/sitemap.xml

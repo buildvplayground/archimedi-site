@@ -1,0 +1,33 @@
+{
+  "projeto": "ArchiMedi",
+  "slug": "archimedi",
+  "setor": "arquitetura e obras para saúde",
+  "hospedagem": "Vercel (estático) + public_html (Hostinger)",
+  "etapa_atual": 5,
+  "atualizado_em": "2026-09-17",
+  "etapas": [
+    {"n": 1, "nome": "extrair-drive", "status": "done"},
+    {"n": 2, "nome": "scaffold-projeto", "status": "done"},
+    {"n": "2b", "nome": "repo-github", "status": "pending"},
+    {"n": 3, "nome": "design-system", "status": "done"},
+    {"n": 4, "nome": "extrair-copy", "status": "done"},
+    {"n": 5, "nome": "gerar-frontend", "status": "doing"},
+    {"n": 6, "nome": "ajustes-imagens-responsivo", "status": "pending"},
+    {"n": 7, "nome": "modulos-lgpd-tags", "status": "pending"},
+    {"n": 8, "nome": "revisao-humana-deploy", "status": "blocked"}
+  ],
+  "pendencias": [
+    {"item": "Número real de WhatsApp", "detalhe": "Placeholder 5541999999999 em Site/js/app.js. Trocar pela constante WA."},
+    {"item": "E-mail e telefone institucionais", "detalhe": "Placeholders no footer."},
+    {"item": "GTM/GA4/Meta Pixel IDs", "detalhe": "Instalar tags só com IDs fornecidos."},
+    {"item": "Módulos LGPD", "detalhe": "Banner de cookies + Política de Privacidade a instalar na etapa 7."},
+    {"item": "Repo GitHub", "detalhe": "Criar dev-buildv/archimedi-site (privado) e push."},
+    {"item": "Domínio + deploy produção", "detalhe": "Importar deploy-vercel no Vercel (Root Directory=deploy-vercel) e/ou subir public_html por FTP."}
+  ],
+  "links": {
+    "drive": "https://drive.google.com/drive/folders/1aLaxfYpr536_5lB3AInzL4gwWDrXkpAe",
+    "repo": null,
+    "preview": null,
+    "dominio": null
+  }
+}
