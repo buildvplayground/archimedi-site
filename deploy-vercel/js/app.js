@@ -118,20 +118,13 @@
     if(heroLight) heroLight.style.transform = 'translateY('+(y*0.05)+'px)';
   }
 
-  /* ---------- Steps (como funciona) ---------- */
-  var steps = document.querySelector('.steps');
-  if(steps){
-    var sObs = new IntersectionObserver(function(ents){
-      ents.forEach(function(e){
-        if(e.isIntersecting){
-          steps.classList.add('on');
-          var items = steps.querySelectorAll('.step');
-          items.forEach(function(st,i){ setTimeout(function(){ st.classList.add('in'); }, RM?0:(180+i*200)); });
-          sObs.disconnect();
-        }
-      });
-    }, {threshold:0.35});
-    sObs.observe(steps);
+  /* ---------- Processo "Como começar" (linha que desenha) ---------- */
+  var proc = document.querySelector('[data-proc]');
+  if(proc){
+    var pObs = new IntersectionObserver(function(ents){
+      ents.forEach(function(e){ if(e.isIntersecting){ proc.classList.add('on'); pObs.disconnect(); } });
+    }, {threshold:0.3});
+    pObs.observe(proc);
   }
 
   /* ---------- Counters ---------- */
