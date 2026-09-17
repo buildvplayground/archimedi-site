@@ -5,6 +5,7 @@ site antigo/
 Marca/
 Copys/
 design-system/
+Site/
 brief-pack.md
 *.log
 preview-server.js
