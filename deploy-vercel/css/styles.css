@@ -92,6 +92,7 @@ em{font-style:italic;color:var(--terracota);font-weight:500}
 .dark h1,.dark h2,.dark h3{color:var(--off-white)}
 .section-head{max-width:64ch}
 .section-head .h-section{margin-bottom:1.1rem}
+.section-cta{margin-top:clamp(2rem,4.5vh,3.2rem)}
 
 /* hachura diagonal de prancheta (convenção de corte arquitetônico), concentrada
    num canto por máscara para parecer composta, não um ladrilho uniforme */
