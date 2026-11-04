@@ -6,8 +6,8 @@
   var RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   var FINE = matchMedia('(hover:hover) and (pointer:fine)').matches;
 
-  /* ---------- WhatsApp (número centralizado — PENDÊNCIA: trocar pelo real) ---------- */
-  var WA = '5541999999999';
+  /* ---------- WhatsApp (número centralizado) ---------- */
+  var WA = '5541997565347';
   function waLink(msg){ return 'https://wa.me/'+WA+'?text='+encodeURIComponent(msg); }
   document.querySelectorAll('[data-wa]').forEach(function(a){
     var s = a.getAttribute('data-wa') || 'o site';

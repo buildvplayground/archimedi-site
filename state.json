@@ -17,7 +17,6 @@
     {"n": 8, "nome": "revisao-humana-deploy", "status": "blocked"}
   ],
   "pendencias": [
-    {"item": "Número real de WhatsApp", "detalhe": "Placeholder 5541999999999 em Site/js/app.js. Trocar pela constante WA."},
     {"item": "E-mail e telefone institucionais", "detalhe": "Placeholders no footer."},
     {"item": "GTM/GA4/Meta Pixel IDs", "detalhe": "Instalar tags só com IDs fornecidos."},
     {"item": "Módulos LGPD", "detalhe": "Banner de cookies + Política de Privacidade a instalar na etapa 7."},
