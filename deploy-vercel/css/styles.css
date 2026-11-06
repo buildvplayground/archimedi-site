@@ -376,7 +376,7 @@ html[data-motion] .section-head .h-section,html[data-motion] .about-text .h-sect
    RESPONSIVO
    ============================================================ */
 @media(max-width:1000px){
-  .split,.showcase-grid,.steps-wrap{grid-template-columns:1fr}
+  .split,.split.rev,.showcase-grid,.steps-wrap{grid-template-columns:1fr}
   .split.rev .split-media{order:0}
   .pillars{grid-template-columns:repeat(2,1fr)}
   .diffs{grid-template-columns:repeat(2,1fr)}
