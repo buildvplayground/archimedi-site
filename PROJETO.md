@@ -27,7 +27,7 @@ Cada seção fecha em uma tela (100svh). Sistema de movimento da casa (reveals +
 - `deploy-vercel/` (Root Directory no Vercel, Framework: Other/static) + `vercel.json`
 - `public_html/` (FTP Hostinger) + `.htaccess` (cache, gzip, headers)
   - Deploy automático: push na `main` que mexe em `public_html/` roda
-    `.github/workflows/deploy-hostinger.yml` e sobe por FTP para archimedi.com.br
+    `.github/workflows/deploy-hostinger.yml` e sobe por FTP para `domains/archimedi.com.br/public_html/` (o login FTP abre na raiz da conta)
     (secrets `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`). Rodar na mão: aba Actions → Run workflow.
   - Mudou CSS/JS? Suba o `?v=` no `index.html` (o `.htaccess` guarda CSS/JS por 1 mês).
 - Ambos versionados no repo. Preview local: `node preview-server.js` → http://localhost:8099/
