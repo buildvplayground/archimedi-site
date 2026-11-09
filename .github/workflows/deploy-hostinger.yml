@@ -30,4 +30,4 @@ jobs:
           port: 21
           protocol: ftps
           local-dir: ./public_html/
-          server-dir: ./public_html/
+          server-dir: ./domains/archimedi.com.br/public_html/
