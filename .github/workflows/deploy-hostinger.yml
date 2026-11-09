@@ -1,0 +1,33 @@
+# Publica public_html/ na Hostinger (archimedi.com.br) a cada push na main.
+# Credenciais nos secrets do repositório: FTP_SERVER, FTP_USERNAME, FTP_PASSWORD.
+# A action guarda no servidor o .ftp-deploy-sync-state.json e só envia o que mudou.
+name: Deploy Hostinger (FTP)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public_html/**'
+      - '.github/workflows/deploy-hostinger.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-hostinger
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enviar public_html por FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          protocol: ftps
+          local-dir: ./public_html/
+          server-dir: ./public_html/
