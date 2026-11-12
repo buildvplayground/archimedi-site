@@ -36,9 +36,12 @@ DirectoryIndex index.html
   Require all denied
 </Files>
 
-# URLs do site antigo ainda no Google (ex.: /arquitetura/saude) → home
+# Endereço único (www → sem www) e URLs do site antigo no Google (/arquitetura/saude) → home
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  # www → sem www (mesmo endereço do canonical e do sitemap)
+  RewriteCond %{HTTP_HOST} ^www\.archimedi\.com\.br$ [NC]
+  RewriteRule ^(.*)$ https://archimedi.com.br/$1 [R=301,L]
   RewriteRule ^arquitetura(/.*)?$ / [R=301,L]
 </IfModule>
 
