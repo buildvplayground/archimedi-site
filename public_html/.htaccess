@@ -31,6 +31,18 @@ DirectoryIndex index.html
   </FilesMatch>
 </IfModule>
 
+# Arquivo de controle do deploy (GitHub Actions/FTP): não servir na web
+<Files ".ftp-deploy-sync-state.json">
+  Require all denied
+</Files>
+
+# URLs do site antigo ainda no Google (ex.: /arquitetura/saude) → home
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^arquitetura(/.*)?$ / [R=301,L]
+</IfModule>
+
+# HTTPS já é forçado pela Hostinger (http → https 301)
 # Força HTTPS (ative após o domínio ter SSL)
 # <IfModule mod_rewrite.c>
 #   RewriteEngine On
