@@ -27,4 +27,5 @@ jobs:
           port: 21
           protocol: ftps
           local-dir: ./public_html/
-          server-dir: ./
+          # Docroot real (caminho absoluto, padrão da skill deploy-hostinger).
+          server-dir: /domains/archimedi.com.br/public_html/
